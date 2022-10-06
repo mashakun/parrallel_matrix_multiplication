@@ -5,8 +5,6 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "parrallel_matrix_multiplocation", "parrallel_matrix_multiplocation\parrallel_matrix_multiplocation.vcxproj", "{FC47475F-1983-48AE-BE3C-B3B1EC12A617}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D3D23BD-0E1D-4EFF-841E-0BEA7B2C9CB6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
