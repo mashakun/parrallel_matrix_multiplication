@@ -1,0 +1,56 @@
+=============== n = 100 =================
+--------------- canon ---------------
+Multiplication time: 0.006352
+--------------- canon_internal ---------------
+Multiplication time: 0.0094709
+--------------- canon_external ---------------
+Multiplication time: 0.0024877
+2570=============== n = 250 =================
+--------------- canon ---------------
+Multiplication time: 0.103003
+--------------- canon_internal ---------------
+Multiplication time: 0.0526671
+--------------- canon_external ---------------
+Multiplication time: 0.0433753
+2570=============== n = 500 =================
+--------------- canon ---------------
+Multiplication time: 1.48781
+--------------- canon_internal ---------------
+Multiplication time: 0.292624
+--------------- canon_external ---------------
+Multiplication time: 0.172866
+2570=============== n = 512 =================
+--------------- canon ---------------
+Multiplication time: 0.924507
+--------------- canon_internal ---------------
+Multiplication time: 0.337987
+--------------- canon_external ---------------
+Multiplication time: 0.244783
+2570=============== n = 1500 =================
+--------------- canon ---------------
+Multiplication time: 34.1264
+--------------- canon_internal ---------------
+Multiplication time: 16.0182
+--------------- canon_external ---------------
+Multiplication time: 12.0841
+2570=============== n = 1750 =================
+--------------- canon ---------------
+Multiplication time: 59.0301
+--------------- canon_internal ---------------
+Multiplication time: 29.0484
+--------------- canon_external ---------------
+Multiplication time: 19.705
+2570=============== n = 2000 =================
+--------------- canon ---------------
+Multiplication time: 78.4901
+--------------- canon_internal ---------------
+Multiplication time: 48.5679
+--------------- canon_external ---------------
+Multiplication time: 30.2929
+2570=============== n = 2048 =================
+--------------- canon ---------------
+Multiplication time: 276.619
+--------------- canon_internal ---------------
+Multiplication time: 118.434
+--------------- canon_external ---------------
+Multiplication time: 80.5847
