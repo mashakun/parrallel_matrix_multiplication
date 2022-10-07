@@ -2,7 +2,7 @@
 #include <omp.h> 
 #include <iostream>
 
-int* canon(int* A, int* B, int n) {
+int* canon(int* A, int* B, int n, std::ostream& out) {
 	int i = 0, j = 0, k = 0;
 	double t1, t2;
 
@@ -25,13 +25,13 @@ int* canon(int* A, int* B, int n) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "canon;" << t2 - t1 << ';' << n << std::endl;
 
 
 	return C;
 }
 
-int* canon_external(int* A, int* B, int n) {
+int* canon_external(int* A, int* B, int n, std::ostream& out) {
 	int i = 0, j = 0, k = 0;
 	double t1, t2;
 
@@ -55,13 +55,13 @@ int* canon_external(int* A, int* B, int n) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "canon_external;" << t2 - t1 << ';' << n << std::endl;
 
 
 	return C;
 }
 
-int* canon_internal(int* A, int* B, int n) {
+int* canon_internal(int* A, int* B, int n, std::ostream& out) {
 	int i = 0, j = 0, k = 0;
 	double t1, t2;
 
@@ -85,13 +85,13 @@ int* canon_internal(int* A, int* B, int n) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "canon_internal;" << t2 - t1 << ';' << n << std::endl;
 
 
 	return C;
 }
 
-int* blocked(int* A, int* B, int n, int r) {
+int* blocked(int* A, int* B, int n, int r, std::ostream& out) {
 	int i = 0, j = 0, k = 0, i_gl = 0, j_gl = 0, k_gl = 0;
 	const int q = n / r;
 	double t1, t2;
@@ -125,13 +125,13 @@ int* blocked(int* A, int* B, int n, int r) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "blocked;" << t2 - t1 << ';' << n << ';' << r << std::endl;
 
 
 	return C;
 }
 
-int* blocked_external(int* A, int* B, int n, int r) {
+int* blocked_external(int* A, int* B, int n, int r, std::ostream& out) {
 	int i = 0, j = 0, k = 0, i_gl = 0, j_gl = 0, k_gl = 0;
 	const int q = n / r;
 	double t1, t2;
@@ -166,13 +166,13 @@ int* blocked_external(int* A, int* B, int n, int r) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "blocked_external;" << t2 - t1 << ';' << n << ';' << r << std::endl;
 
 
 	return C;
 }
 
-int* blocked_internal(int* A, int* B, int n, int r) {
+int* blocked_internal(int* A, int* B, int n, int r, std::ostream& out) {
 	int i = 0, j = 0, k = 0, i_gl = 0, j_gl = 0, k_gl = 0;
 	const int q = n / r;
 	double t1, t2;
@@ -207,7 +207,7 @@ int* blocked_internal(int* A, int* B, int n, int r) {
 
 
 	t2 = omp_get_wtime();
-	std::cout << "Multiplication time: " << t2 - t1 << '\n';
+	out << "blocked_internal;" << t2 - t1 << ';' << n << ';' << r << std::endl;
 
 
 	return C;
