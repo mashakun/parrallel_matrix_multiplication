@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "matrix.h"
 #include <omp.h> 
 #include <iostream>
 
